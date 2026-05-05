@@ -1,0 +1,53 @@
+{
+  "name": "sbazar",
+  "version": "0.1.0",
+  "description": "MCP server for Sbazar.cz — search and inspect listings on the Czech classifieds marketplace.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "sbazar": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "sbazar",
+    "bazar",
+    "czech",
+    "classifieds",
+    "marketplace",
+    "claude"
+  ],
+  "author": "basta <jsembasta@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/basta/sbazar#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basta/sbazar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basta/sbazar/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  }
+}

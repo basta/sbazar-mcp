@@ -1,0 +1,11 @@
+src/
+node_modules/
+.github/
+.claude/
+.gitignore
+tsconfig.json
+test_sbazar.py
+*.log
+.DS_Store
+.env
+.env.*
