@@ -133,7 +133,7 @@ async function getItemDetail(idOrUrl: string): Promise<ItemDetail> {
 }
 
 const server = new Server(
-  { name: "sbazar", version: "0.1.0" },
+  { name: "sbazar-mcp", version: "0.1.0" },
   { capabilities: { tools: {} } }
 );
 

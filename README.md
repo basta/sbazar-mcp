@@ -1,7 +1,7 @@
-# sbazar
+# sbazar-mcp
 
-[![npm](https://img.shields.io/npm/v/sbazar.svg)](https://www.npmjs.com/package/sbazar)
-[![license](https://img.shields.io/npm/l/sbazar.svg)](./LICENSE)
+[![npm](https://img.shields.io/npm/v/sbazar-mcp.svg)](https://www.npmjs.com/package/sbazar-mcp)
+[![license](https://img.shields.io/npm/l/sbazar-mcp.svg)](./LICENSE)
 
 An [MCP](https://modelcontextprotocol.io) server for [Sbazar.cz](https://www.sbazar.cz), the Czech classifieds marketplace. Lets Claude (or any MCP client) search Sbazar listings and fetch full item details.
 
@@ -25,7 +25,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
   "mcpServers": {
     "sbazar": {
       "command": "npx",
-      "args": ["-y", "sbazar"]
+      "args": ["-y", "sbazar-mcp"]
     }
   }
 }
@@ -34,7 +34,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS)
 ### Claude Code
 
 ```bash
-claude mcp add sbazar -- npx -y sbazar
+claude mcp add sbazar -- npx -y sbazar-mcp
 ```
 
 Or add to `.mcp.json` in your project / `~/.claude.json`:
@@ -44,7 +44,7 @@ Or add to `.mcp.json` in your project / `~/.claude.json`:
   "mcpServers": {
     "sbazar": {
       "command": "npx",
-      "args": ["-y", "sbazar"]
+      "args": ["-y", "sbazar-mcp"]
     }
   }
 }
@@ -59,7 +59,7 @@ Add to `~/.cursor/mcp.json` (or per-project `.cursor/mcp.json`):
   "mcpServers": {
     "sbazar": {
       "command": "npx",
-      "args": ["-y", "sbazar"]
+      "args": ["-y", "sbazar-mcp"]
     }
   }
 }
@@ -67,7 +67,7 @@ Add to `~/.cursor/mcp.json` (or per-project `.cursor/mcp.json`):
 
 ### Other MCP clients
 
-Any client that supports stdio MCP servers can launch it as `npx -y sbazar`.
+Any client that supports stdio MCP servers can launch it as `npx -y sbazar-mcp`.
 
 ## Usage examples
 
@@ -98,8 +98,8 @@ Once connected, you can ask the assistant things like:
 ## Develop
 
 ```bash
-git clone https://github.com/basta/sbazar
-cd sbazar
+git clone https://github.com/basta/sbazar-mcp
+cd sbazar-mcp
 npm install
 npm run build
 npm start
